@@ -25,3 +25,5 @@ If your Eclipse project is properly setup, you should be able to right-click the
 
 ##Grading
 Your grade will be based on (1) whether you code passes all unit tests and (2) whether your code is well designed. Your code must be demonstrate proper decomposition (into classes and methods), clear implementation, and efficiency.
+
+:warning: Make sure you have followed all [style guidelines](https://github.com/CS212-S16/lectures/blob/master/notes/style.md)!
