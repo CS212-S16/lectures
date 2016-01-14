@@ -8,14 +8,17 @@ public class YelpUserStatistics {
 		//TODO: initialize data members
 		
 	}
-	
-		//open file
-		//for each line
-		// parse as json
-		// if review count > threshold
-		//  increment active
-		// if at least one vote recorded
-		//  increment voters
+
+	/**
+	 * Logic to initialize data members from user file:
+	 * open file
+	 * for each line
+	 * 	 parse as json
+	 *   if review_count > threshold
+	 * 	   increment active
+	 *   if at least one vote is recorded
+	 *     increment voters  
+	 */
 		
 	
 	/**
