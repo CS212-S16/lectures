@@ -5,29 +5,29 @@ CS 212 - Spring 2016 - Week 1 Notes
 
 In CS 212 - Software Development you will spend the semester implementing a large piece of software using the Java programming language.
 
-Throughout the semester, you will practice using advanced Java constructs; implement complex data structures; implement concurrent programs; and learn and apply the major technologies underlying web applications. A full list of learning outcomes for the course may be found here: [Learning Outcomes] (https://usfca.instructure.com/courses/1558940/pages/outcomes)
+**Outcomes** Throughout the semester, you will practice using advanced Java constructs; implement complex data structures; implement concurrent programs; and learn and apply the major technologies underlying web applications. A full list of learning outcomes for the course may be found here: [Learning Outcomes] (https://usfca.instructure.com/courses/1558940/pages/outcomes)
 
-The course web page at [http://cs212.cs.usfca.edu](http://cs212.cs.usfca.edu) is a very important resource. It will be updated frequently with assignments and links to resources.
+**Web Page** The course web page at [http://cs212.cs.usfca.edu](http://cs212.cs.usfca.edu) is a very important resource. It will be updated frequently with assignments and links to resources.
 
-Some lectures will include notes posted on github, some will include slides, and almost all will include code demonstrations that we will develop interactively as a class. Code will be posted to the class [Github](http://github.com) organization after class (feel free to remind me via slack if I forget!).
+**Lecture Format** Some lectures will include notes posted on github, some will include slides, and almost all will include code demonstrations that we will develop interactively as a class. Code will be posted to the class [Github](http://github.com) organization after class (feel free to remind me via slack if I forget!).
 
-We will **not** be building a search engine this semester, but hopefully you'll find this semester's project just as cool. We will be using song data from last.fm to build a *Song Finder*. Visit a web page, provide an artist, song title, or tag of your choosing, and the Song Finder will give you a list of other songs you might like! 
+**Cool Project** We will **not** be building a search engine this semester, but hopefully you'll find this semester's project just as cool. We will be using song data from last.fm to build a *Song Finder*. Visit a web page, provide an artist, song title, or tag of your choosing, and the Song Finder will give you a list of other songs you might like! 
 
-We will be using a tool called Slack for communication in this course. It is preferred that most questions be posted in the #general channel. You may send me a DM with private questions, but if the question is general I will require you to post it the #general channel before answering. You may reply to other's questions in the #general channel. Only the instructor is allowed to post in the #announcements channel. For sensitive issues, you may send me email. 
+**Slack (also cool)** We will be using a tool called Slack for communication in this course. It is preferred that most questions be posted in the #general channel. You may send me a DM with private questions, but if the question is general I will require you to post it the #general channel before answering. You may reply to other's questions in the #general channel. Only the instructor is allowed to post in the #announcements channel. For sensitive issues, you may send me email. 
 
-Your TA for the course will be Richard Wang. He will have office hours Monday and Friday 12-2pm.
+**Help!** Your TA for the course will be Richard Wang. He will have office hours Monday and Friday 12-2pm. You may also visit the tutoring center for help with this class.
 
-You will have a homework assignment due on Friday of most weeks. **Homework assignments may not be submitted late and may not be resubmitted.** Your grade will depend largely on how many test cases your solution is able to pas.. You will not receive credit for a late homework submission unless you provide a doctor's note indicating a medical emergency.
+**Homework** You will have a homework assignment due on Friday of most weeks. **Homework assignments may not be submitted late and may not be resubmitted.** Your grade will depend largely on how many test cases your solution is able to pas.. You will not receive credit for a late homework submission unless you provide a doctor's note indicating a medical emergency.
 
-You will have five project assignments and we will use a mastery learning approach for the projects. In mastery learning, every project must demonstrate mastery of the topic, and be worthy of 100%. You will be graded on the number of projects completed. It is *possible* to pass the course completing only three projects, however most students will need to complete at least four projects to earn a passing grade.
+**Projects** You will have five project assignments and we will use a mastery learning approach for the projects. In mastery learning, every project must demonstrate mastery of the topic, and be worthy of 100%. You will be graded on the number of projects completed. It is *possible* to pass the course completing only three projects, however most students will need to complete at least four projects to earn a passing grade.
 
-Each project has a *suggested* deadline. Projects 1 and 2 have a **final deadline**. If a project does not demonstrate mastery before the final deadline you will be assigned an automatic F in the course. 
+**Mastery Learning** Each project has a *suggested* deadline. Projects 1 and 2 have a **final deadline**. If a project does not demonstrate mastery before the final deadline you will be assigned an automatic F in the course. 
 
 A project may not be submitted until it passes all test cases. Once it passes all test cases, the instructor or TA will look at your code and may provide feedback. If feedback is provided, you must fix any problems, verify you are still passing all test cases, and resubmit. If your code passes the verification process, you will qualify for code review with the instructor. The instructor may request changes. If so, you must implement all changes and resubmit.
 
 Each student will have one opportunity to resubmit each project without penalty. Additional resubmissions may result in a deduction from the final score.
 
-I have **ZERO** tolerance for academic dishonesty!
+**DO NOT CHEAT** I have **ZERO** tolerance for academic dishonesty!
 
 ## Homeworks 0 and 1
 
