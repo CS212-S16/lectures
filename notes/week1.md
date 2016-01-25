@@ -17,7 +17,7 @@ In CS 212 - Software Development you will spend the semester implementing a larg
 
 **Help!** Your TA for the course will be Richard Wang. He will have office hours Monday and Friday 12-2pm. You may also visit the tutoring center for help with this class.
 
-**Homework** You will have a homework assignment due on Friday of most weeks. **Homework assignments may not be submitted late and may not be resubmitted.** Your grade will depend largely on how many test cases your solution is able to pas.. You will not receive credit for a late homework submission unless you provide a doctor's note indicating a medical emergency.
+**Homework** You will have a homework assignment due on Friday of most weeks. **Homework assignments may not be submitted late and may not be resubmitted.** Your grade will depend largely on how many test cases your solution is able to pass. You will not receive credit for a late homework submission unless you provide a doctor's note indicating a medical emergency.
 
 **Projects** You will have five project assignments and we will use a mastery learning approach for the projects. In mastery learning, every project must demonstrate mastery of the topic, and be worthy of 100%. You will be graded on the number of projects completed. It is *possible* to pass the course completing only three projects, however most students will need to complete at least four projects to earn a passing grade.
 
@@ -70,5 +70,7 @@ Here are some of the things we'll need to do for this example:
 
 For this exercise, we'll practice using recursion to traverse a directory structure.
 
+## Test Cases
 
+Your homework assignments will require you to pass all `JUnit` tests provided in the project. 
 
