@@ -1,14 +1,26 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
 import java.nio.file.Path;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 public class YelpUserStatistics {
 
 	//TODO: declare constants and data members
-	
+	private int numActive;
+	private Path path;
+		
 	public YelpUserStatistics(Path path) {
 		//TODO: initialize data members
-		
+		this.path = path;
+		this.numActive = 0;
+		parseUsers();
 	}
-
+	
 	/**
 	 * Logic to initialize data members from user file:
 	 * open file
@@ -19,6 +31,33 @@ public class YelpUserStatistics {
 	 *   if at least one vote is recorded
 	 *     increment voters  
 	 */
+	private void parseUsers() {
+		
+		JSONParser parser = new JSONParser();
+		
+		try (BufferedReader reader = Files.newBufferedReader(this.path, Charset.forName("UTF-8"))) {
+			String line = reader.readLine();
+			while(line != null) {
+				
+				JSONObject contents = (JSONObject) parser.parse(line);
+				long reviewCount = (long) contents.get("review_count");
+				
+				if(reviewCount > 10) {
+					this.numActive++;
+				}
+				line = reader.readLine();
+			}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
 		
 	
 	/**
@@ -29,7 +68,7 @@ public class YelpUserStatistics {
 	 * @return
 	 */
 	public int getNumberActiveUsers() {		
-		return 0;
+		return this.numActive;
 	}
 	
 	/**

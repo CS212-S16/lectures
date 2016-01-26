@@ -8,7 +8,7 @@ public class Driver {
 		Path path = Paths.get("input/user_dataset.json");
 		YelpUserStatistics stats = new YelpUserStatistics(path);
 		System.out.printf("Active users: %d\n", stats.getNumberActiveUsers());
-		System.out.printf("Voters: %d\n", stats.getVoters());
+		//System.out.printf("Voters: %d\n", stats.getVoters());
 	
 	}
 
