@@ -33,18 +33,27 @@ public class YelpUserStatistics {
 	 */
 	private void parseUsers() {
 		
+		//create a parser to take text and create JSONObjects
 		JSONParser parser = new JSONParser();
-		
+
+		//open the file using try-with-resources
 		try (BufferedReader reader = Files.newBufferedReader(this.path, Charset.forName("UTF-8"))) {
+			//read in the first line of the file
 			String line = reader.readLine();
+			//as long as there is another line to process
 			while(line != null) {
-				
+				//take the line of text and create a JSONObject
 				JSONObject contents = (JSONObject) parser.parse(line);
+				//retrieve the value associated with the key "review_count"
 				long reviewCount = (long) contents.get("review_count");
 				
+				//if the review count is greater than 10, increment active users
+				//it would be a great idea to use a constant rather than a magic number!
 				if(reviewCount > 10) {
 					this.numActive++;
 				}
+				//update our loop control variable
+				//i.e., read the next line
 				line = reader.readLine();
 			}
 			
