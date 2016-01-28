@@ -12,15 +12,20 @@ public class YelpUserStatistics {
 
 	//TODO: declare constants and data members
 	private int numActive;
+	private int numVoters;
+
 	private Path path;
-		
+	private final int ACTIVE_THRESHOLD = 10;
+	private final int VOTE_MINIMUM = 0;
+
 	public YelpUserStatistics(Path path) {
 		//TODO: initialize data members
 		this.path = path;
 		this.numActive = 0;
+		this.numVoters = 0;		
 		parseUsers();
 	}
-	
+
 	/**
 	 * Logic to initialize data members from user file:
 	 * open file
@@ -32,43 +37,59 @@ public class YelpUserStatistics {
 	 *     increment voters  
 	 */
 	private void parseUsers() {
-		
+
 		//create a parser to take text and create JSONObjects
 		JSONParser parser = new JSONParser();
-
 		//open the file using try-with-resources
 		try (BufferedReader reader = Files.newBufferedReader(this.path, Charset.forName("UTF-8"))) {
 			//read in the first line of the file
-			String line = reader.readLine();
+			String line = reader.readLine();			
 			//as long as there is another line to process
 			while(line != null) {
+
 				//take the line of text and create a JSONObject
 				JSONObject contents = (JSONObject) parser.parse(line);
+
 				//retrieve the value associated with the key "review_count"
-				long reviewCount = (long) contents.get("review_count");
-				
+				long reviewCount = (long) contents.get("review_count");				
 				//if the review count is greater than 10, increment active users
 				//it would be a great idea to use a constant rather than a magic number!
-				if(reviewCount > 10) {
+				if(reviewCount > ACTIVE_THRESHOLD) {
 					this.numActive++;
 				}
+
+
+				//determine whether the user is a voter
+				JSONObject votes = (JSONObject) contents.get("votes");
+
+				long funny = (long) votes.get("funny");
+				long useful = (long) votes.get("useful");
+				long cool = (long) votes.get("cool");
+
+				if(funny > VOTE_MINIMUM || 
+						useful > VOTE_MINIMUM ||
+						cool > VOTE_MINIMUM) {
+					this.numVoters++;
+				}
+
+
 				//update our loop control variable
 				//i.e., read the next line
 				line = reader.readLine();
 			}
-			
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+
+
 	}
-	
-		
-	
+
+
+
 	/**
 	 * Returns the number of active users.
 	 * An active user is one who has contributed 
@@ -79,7 +100,7 @@ public class YelpUserStatistics {
 	public int getNumberActiveUsers() {		
 		return this.numActive;
 	}
-	
+
 	/**
 	 * Returns the number of users who 
 	 * have voted at least once.
@@ -87,7 +108,7 @@ public class YelpUserStatistics {
 	 * @return
 	 */
 	public int getVoters() {
-		return 0;
+		return this.numVoters;
 	}
-	
+
 }
