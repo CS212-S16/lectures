@@ -16,7 +16,9 @@ public class FileFinder {
 	 * @return
 	 */
 	public static ArrayList<String> findFiles(Path path, String extension) {
-		return null;
+		ArrayList<String> result = new ArrayList<>();
+		findFiles(path, extension, result);
+		return result;
 	}
 	
 	/**
@@ -25,7 +27,28 @@ public class FileFinder {
 	 * @param extension
 	 * @param files
 	 */
-	public static void findFiles(Path path, String extension, ArrayList<String> files) {
+	private static void findFiles(Path path, String extension, ArrayList<String> files) {
+		
+		if(Files.isDirectory(path)) {
+			
+			try(DirectoryStream<Path> dir = 
+				Files.newDirectoryStream(path)) {
+				
+				for(Path entry: dir) {
+					findFiles(entry, extension, files);
+				}
+				
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		} else if(path.toString().endsWith(extension.toLowerCase().trim())) {
+			files.add(path.toString());
+		}
+		
 		
 	}
 	
@@ -43,6 +66,8 @@ public class FileFinder {
 
 	public static void main(String[] args) {
 		//TODO: some test code
+		Path path = Paths.get("input");
+		System.out.println(findFiles(path, ".json"));
 	}
 	
 }
