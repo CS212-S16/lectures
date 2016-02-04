@@ -5,11 +5,12 @@ public class Driver {
 		
 		YelpUsers userList = new YelpUsers();
 				
-//		YelpUser user1 = new YelpUser("Bob", 3.4, "112233", 5);
-//		YelpUser user2 = new YelpUser("Sue", 3, "223344", 56);
-//		YelpUser user3 = new YelpUser("Ralph", 2.5, "334455", 23);
-//		YelpUser user4 = new YelpUser("Roger", 4.5, "445566", 8);
-//		YelpUser user5 = new YelpUser("Sally", 5.0, "556677", 19);
+		YelpUser user1 = new YelpUser("Bob", "112233", 5);
+		System.out.println(user1);
+//		YelpUser user2 = new YelpUser("Sue", "223344", 56);
+//		YelpUser user3 = new YelpUser("Ralph", "334455", 23);
+//		YelpUser user4 = new YelpUser("Roger", "445566", 8);
+//		YelpUser user5 = new YelpUser("Sally", "556677", 19);
 //	
 //		try {
 //			userList.add(user1);

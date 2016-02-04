@@ -16,5 +16,46 @@
 
 public class YelpUser {
 
+	private String name;
+	private String id;
+	private int reviewCount;
+	
+	/**
+	 * Construct a YelpUser.
+	 * @param name
+	 * @param id - must be unique
+	 * @param reviewCount
+	 */
+	public YelpUser(String name, String id, int reviewCount) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.reviewCount = reviewCount;
+	}
+
+	/**
+	 * Returns the name of this YelpUser.
+	 * @return
+	 */
+	public String getName() {
+		return name;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public int getReviewCount() {
+		return reviewCount;
+	}
+	
+	/**
+	 * Boring toString method used for debugging
+	 */
+	public String toString() {
+		return name + " - " + id + " - " + reviewCount;
+	}
+	
+	
 		
 }
