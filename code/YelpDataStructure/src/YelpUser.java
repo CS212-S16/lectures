@@ -1,3 +1,5 @@
+import java.util.*;
+
 /*
 {  
    "votes":{  
@@ -19,6 +21,7 @@ public class YelpUser {
 	private String name;
 	private String id;
 	private int reviewCount;
+//	private HashMap<String, Integer> votes;	
 	
 	/**
 	 * Construct a YelpUser.
