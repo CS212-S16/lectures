@@ -1,25 +1,22 @@
-
 public class Coffee extends Beverage {
-
-	private boolean isDecaf;
+	
+	protected boolean isDecaf;
 	
 	public Coffee(int ounces, boolean isDecaf) {
 		super(ounces);
-		this.isDecaf = isDecaf;		
+		this.isDecaf = isDecaf;
 	}
 	
-	@Override
 	public String getServingGlass() {
-		return "cup";
-	}
-
-	public String toString() {
-		return "Coffee: " + ounces + " " + getServingGlass();
+		return "Cup";
 	}
 	
+	public boolean isDecaf() {
+		return this.isDecaf;
+	}	
+
 	public void drink() {
-		System.out.println("that's hot!");
+		super.drink();
+		System.out.println("Wow, that's hot!");
 	}
-
-	
 }
