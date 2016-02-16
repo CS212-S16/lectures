@@ -1,5 +1,5 @@
 
-public final class Soda extends Beverage {
+public class Soda extends Beverage {
 
 	private int sugarContent;
 	
@@ -8,6 +8,10 @@ public final class Soda extends Beverage {
 		this.sugarContent = sugarContent;
 	}
 
+	public int getSugarContent() {
+		return this.sugarContent;
+	}
+	
 	@Override
 	public String getServingGlass() {
 		return "Glass";
