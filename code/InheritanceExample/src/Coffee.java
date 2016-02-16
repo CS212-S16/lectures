@@ -15,6 +15,7 @@ public class Coffee extends Beverage {
 		return this.isDecaf;
 	}	
 
+	@Override
 	public void drink() {
 		super.drink();
 		System.out.println("Wow, that's hot!");
