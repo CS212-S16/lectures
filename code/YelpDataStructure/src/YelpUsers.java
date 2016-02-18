@@ -1,5 +1,12 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map.Entry;
 import java.util.TreeMap;
 
 public class YelpUsers {
@@ -51,9 +58,18 @@ public class YelpUsers {
 	}
 	
 	public void debugById() {
-		for(String id: this.usersMap.navigableKeySet()) {
-			System.out.println(id + ": " + this.usersMap.get(id));
+		//Path path = Paths.get("/Users/srollins/teaching/cs212/lectures/code/YelpDataStructure/tmp.txt");
+		Path path = Paths.get("tmp.txt");
+		try (PrintWriter writer = new PrintWriter(Files.newBufferedWriter(path, Charset.forName("UTF-8")))) {
+			for(String id: this.usersMap.navigableKeySet()) {
+				writer.println(this.usersMap.get(id));				
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+	
+	
 	}
 	
 	

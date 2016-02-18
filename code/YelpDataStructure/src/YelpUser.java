@@ -56,9 +56,11 @@ public class YelpUser {
 	 * Boring toString method used for debugging
 	 */
 	public String toString() {
-		return name + " - " + id + " - " + reviewCount;
+		return id + " - " + name;
 	}
 	
-	
+	public static void main(String[] args) {
+		System.out.println("YelpUser main method");
+	}
 		
 }
