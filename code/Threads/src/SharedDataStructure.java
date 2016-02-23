@@ -13,7 +13,7 @@ public class SharedDataStructure {
 	}
 	
 	/* TBD: use of the synchronized keyword */
-	public  void addNumber(int number) {
+	public void addNumber(int number) {
 		//lock write
 		//lock.lockWrite();
 		this.numbers.add(number);
