@@ -184,7 +184,8 @@ public class DuplicateItemException extends Exception {
 You may then implement code to `throw` an instance of the exception in appropriate cases.
 
 ```java
-public void addItem(String item) throws DuplicateItemException {	if(list.contains(item)) {
+public void addItem(String item) throws DuplicateItemException {	
+	if(list.contains(item)) {
 		throw new DuplicateItemException("Item " + item + " already in list.");
 	}
 	list.add(item);		
