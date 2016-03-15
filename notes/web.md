@@ -11,7 +11,7 @@ The [Hypertext Markup Language (HTML)](http://www.w3schools.com/html/html_intro.
     </head>
     <body>
     	<h1>This is a test page</h1>
-    	<p>This is some <b>bold</b> text...and some <i>italic</i> text.</p>
+    	<p>This is some <b>bold</b> text...and some <i>italic</i> text.</p>
     	<p>You can also have a <a href="http://www.cs.usfca.edu">link</a>.</p>
     	<hr/>
    </body>
