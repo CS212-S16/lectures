@@ -1,0 +1,8 @@
+Customers: 5
+Updated: March 18, 2015
+
+Bob Smith	415-422-0934	bob@smith.com
+Jane Doe	805-555-1234:805-348-2348	janey@gmail.com
+Mickey Mouse	415-777-2399	mickey@disney.com
+Donald Duck	805-777-3232	thedon@disney.com
+Minnie Mouse	918-334-2343	min@disney.com
