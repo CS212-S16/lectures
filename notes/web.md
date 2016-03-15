@@ -47,10 +47,12 @@ Ordered (`ol`) and unordered (`ul`) lists are specified as follows:
 Tables are also quite useful:
 
 ```
-<table border="1">	<tr>
+<table border="1">
+	<tr>
 		<td>row 1, cell 1</td>
 		<td>row 1, cell 2</td>
-	</tr>	<tr>
+	</tr>	
+	<tr>
 		<td>row 2, cell 1</td>
 		<td>row 2, cell 2</td>
 	</tr>
