@@ -69,10 +69,6 @@ public class HeaderMatcher {
 		//use DOTALL mode and reluctant quantifier and MULTILINE mode
 		printMatches(data, "(?sm)(.+?:.+?)^\\s*$");
 		
-		//print out matches for one or more chars, followed by : followed by one or more chars
-		//followed by a blank line
-		//use DOTALL mode and reluctant quantifier and MULTILINE mode
-		printMatches(data, "(?sm)((.+?:.+?)+?)^\\s*$");
 				
 	}
 	

@@ -21,22 +21,21 @@ public class PhoneFinder {
 		return buf.toString();
 	}	
 
-	public static TreeSet<Integer> getAreaCodes(String data) {
+	public static TreeSet<String> getAreaCodes(String data) {
 		
-		TreeSet<Integer> areaCodes = new TreeSet<>();
-		String regex = "(\\d{3})(-\\d{3}-\\d{4})";
+		TreeSet<String> areaCodes = new TreeSet<>();
+		String regex = "\\d{3}-\\d{3}-\\d{4}";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(data);
+		
 		while(matcher.find()) {
-			int areaCode = Integer.parseInt(matcher.group(1));
-			areaCodes.add(areaCode);
-			//System.out.println(matcher.group(1));
+			System.out.println(matcher.group());
 		}
 		return areaCodes;		
 	}
 
 	public static String extractHeaders(String data) {		
-		String REGEX = "(?sm)(.+?:.+?)+(^\\s*$)";
+		String REGEX = "(?sm)(.+?:.+?)^\\s*$";
 		return data.replaceFirst(REGEX, "");
 	}
 	
@@ -44,11 +43,9 @@ public class PhoneFinder {
 	public static void main(String[] args) throws IOException {
 		String data = readFile("customerinfo.txt");		
 
-		data = extractHeaders(data);		
-		//System.out.println(data);		
-		//getAreaCodes(data).size();
-		System.out.println(getAreaCodes(data).size());
+//		data = extractHeaders(data);		
+		System.out.println(data);	
+		getAreaCodes(data);
+//		System.out.println(getAreaCodes(data).size());
 	}
-
-
 }
