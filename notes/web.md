@@ -27,7 +27,7 @@ Tags come in pairs. Start tags begin a block and end tags (starting with a forwa
 Images may be included in a page using an `img` tag as below:
 
 ```
-<img src="http://www.cs.usfca.edu/pic.jpg/"> 
+<img src="http://www.cs.usfca.edu/~srollins/pic.jpg/"> 
 ```
 
 Comments are specified as below and are ignored when a page is displayed.
