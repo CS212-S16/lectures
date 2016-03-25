@@ -68,13 +68,13 @@ Links are defined with the `a` tag.
 This example opens the link in a new browser tab:
 
 ```
-<a target=“_blank” href="http://www.cs.usfca.edu">link</a>
+<a target="_blank" href="http://www.cs.usfca.edu">link</a>
 ```
 
 `href` and `target` are **attributes**, just as `border` is an attribute in the `table` element above. Attributes may be reordered.
 
 ```
-<a href="http://www.cs.usfca.edu" target=“_blank” >link</a>
+<a href="http://www.cs.usfca.edu" target="_blank” >link</a>
 ```
 
 `script` elements allow you to specify [javascript](http://www.w3schools.com/js/) on your page. 
