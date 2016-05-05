@@ -21,6 +21,7 @@ End of Semester CS 212 Project FAQ
 - No Project 4 code review slots will be available on 5/13.
 - Only a limited number of slots will be available on 5/12. *Do not rely on being able to schedule for the last possible day.*
 - Expect *at least* a 24-hour turnaround time between a submission and feedback/code review sign up. Do not expect that you will be able to sign up for code review on the day following your submission.
+- If you do not complete Project 4 code review by 5/12 then you will be required to code review Project 4 during your finals week code review slot.
 
 ## Project 5
 - Partial credit may be awarded to solutions that implement only some of the functionality specified.
