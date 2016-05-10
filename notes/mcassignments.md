@@ -34,6 +34,7 @@ Microcloud Node and Port Assignments
 | Michael Brooks | [mc08](mc08:16001/search) | 16001 |
 
 
+[mc08](mc08:16001/search)
 
 
 
