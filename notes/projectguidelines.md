@@ -1,11 +1,11 @@
 Project Guidelines
 ===================
 
-##Getting Started
+## Getting Started
 Begin work on your projects by first cloning the Github project repository that the instructor has created for you. The name of the repository will be `<username>-project`, for example `srollins-project`. You must work from this starting point, and submit your code to the same repository. More detail is available here: [Github instructions](githubinstructions.md)
 
 
-##Submission
+## Submission
 Projects may be resubmitted until *mastery* is demonstrated, but beware that failure to make timely progress will likely result in a low or failing grade in the course.
 
 Follow the [instructions for using Github](githubinstructions.md) to make sure you have uploaded your code correctly.
@@ -18,13 +18,13 @@ Create a new release of your project as described in the [instructions for using
 
 :warning:  Do not create a release until you are passing all tests and believe you are prepared for a code review. You may always seek early feedback on your code by visiting office hours.
 
-##Testing
+## Testing
 You should perform your own testing while you develop the project. The code provided only tests your final result, and may not be suitable for testing your project during development. To see which test files are relevant for each project, look at the test suites provided in the `Project#Test.java` files. 
 
-###Running JUnit Tests Locally
+### Running JUnit Tests Locally
 If your Eclipse project is properly setup, you should be able to right-click the appropriate test file and select "Run As->JUnit Test" in the Package Explorer.
 
-##Code Review
+## Code Review
 Once you have verified your project is properly submitted and passing the necessary JUnit tests, you may sign up for code review. Each code review is 15 minutes, and will be held in the instructor's office.
 
 #### Code Review Appointments ####
